@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import uuid from 'uuid';
 import ProjectItem from "./ProjectItem"
 
-class AddProject extends Component {
+export default class AddProject extends PureComponent {
   constructor(){
     super();
       newProject:{}
@@ -34,23 +34,21 @@ e.preventDefault();
       <div>
 <h3> Add Project</h3>
 <form onSubmit={this.handleSubmit.bind(this)}>
-<div>
-<label> Title</label>
-<input type ='text' ref='title' />
-</div>
-<div>
-<label> Category</label>
-<select ref ='category'>
-{categoryOptions}
-</select>
-</div>
-<br/>
-<input type='submit' value="Submit"/>
-<br/>
-</form>
+  <div>
+  <label> Title</label>
+  <input type ='text' ref='title' />
+  </div>
+  <div>
+  <label> Category</label>
+  <select ref ='category'>
+  {categoryOptions}
+  </select>
+  </div>
+  <br/>
+  <input type='submit' value="Submit"/>
+  <br/>
+  </form>
  </div>
     );
   }
 }
-
-export default AddProject;
