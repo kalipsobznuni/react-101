@@ -1,8 +1,8 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import uuid from 'uuid';
 import ProjectItem from "./ProjectItem"
 
-export default class AddProject extends PureComponent {
+export default class AddProject extends Component {
   constructor(){
     super();
       newProject:{}

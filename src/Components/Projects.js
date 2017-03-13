@@ -1,7 +1,7 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import ProjectItem from "./ProjectItem"
 
-export default class Projects extends PureComponent {
+export default class Projects extends Component {
     deleteProject(id){
       this.props.onDelete(id);
     }
@@ -19,9 +19,7 @@ export default class Projects extends PureComponent {
     return (
       <div className="Projects">
 <h3> Latest Projects</h3>
-{
-projectItems
-}
+{projectItems}
      </div>
     );
   }
