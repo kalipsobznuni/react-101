@@ -15,7 +15,11 @@ export default class AddProject extends Component {
 handleSubmit(e){
   if(this.refs.title.value===""){
     alert('Title is Required');
-  } else{
+//  } else if
+  //(this.refs.title.value==="")
+//{
+//alert('The Project With that Name Already Exists');
+}  else{
     this.setState({newProject:{
         id: uuid.v4(),
       title: this.refs.title.value,

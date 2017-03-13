@@ -1,5 +1,8 @@
 body{
 display: flex;
+justify-content: center;
+align-items: center;
+
 background-image:
 url(http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg);
 background-repeat: space;
@@ -9,4 +12,15 @@ background-size: initial;
 .app {
 background-color:rgba(26, 35, 39, 0.33);
 padding: 20px;
+font-size: 15px;
+font-family: 'Ubuntu', sans-serif;
 }
+
+a {
+  color: #fff;
+    background: #791515;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-size: 14px;
+    line-height: 1;
+    }
