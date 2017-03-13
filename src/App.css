@@ -1,0 +1,12 @@
+body{
+display: flex;
+background-image:
+url(http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg);
+background-repeat: space;
+background-size: initial;
+}
+
+.app {
+background-color:rgba(26, 35, 39, 0.33);
+padding: 20px;
+}

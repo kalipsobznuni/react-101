@@ -47,7 +47,7 @@ handleDeleteProject(id){
 
           render() {
             return (
-              <div className="App">
+              <div className="app">
                < AddProject addProject={this.handleAddProject.bind(this)} />
                 <Projects projects={this.state.projects} onDelete={this.handleDeleteProject.bind(this)} />
               </div>
